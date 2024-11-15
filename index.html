@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initail-scale=1.0">
+<meta name="keyboards" content="html,css">
+<title>Survey Form</title>
+</head>
+  <body>
+    <div>
+       <h1 id="title">Tourism Site Survey Form</h1>
+      <p id="description" class="page"> Thank you for taking the time to help us improve our service</p>
+    </div>
+
+<form id="survey-form">
+ <div class="form-group">
+    <label id="name-label" for="name">Name:</label><br>
+   <input
+     type="text"
+     name="name"
+     id="name" 
+     class="form=control"
+     placeholder="Enter your name"
+     required="">
+     </input>
+     <br><br>
+</div>
+
+  <div class="form-group">
+<label id="email-label" for="email">Email</label><br>
+<input 
+   type="email"
+   name="email" 
+   id="email"  
+   class="form=control" 
+   placeholder="Enter your Email"  
+   required="">
+ </input>
+   <br><br>
+</div>
+
+<div class="form-group">
+ <labe id="age-label" for="age">Age(Optional)</label><br>
+ <input 
+    type="number"
+    name="age" 
+    id="number" 
+    min="2"
+    max="10" 
+    class="form=control" 
+    placeholder="Age">
+ </input>
+   <br><br>
+</div>
+
+ <div class="form-group">
+   <label id="number-label" for="number">Number</label><br>
+   <input 
+   id="number" 
+   name="number" 
+   type="number" 
+   min="10"
+   max="auto"   
+   class="form=control" 
+   placeholder="Enter your number"  
+   required="">
+   </input>
+ </div>
+ 
+   <div class="form-group">
+  <p>Which option best describe your current role?</p>
+  <select id="dropdown" name="role" class="form=control" required="">
+<option type="radio" disabled="" value="" selected=""> Select current role</option>
+<option value="student">Student<option>
+<option value="work">Full Time Woker<option>
+<option value="traveller">Traveller<option>
+<option value="prefer">Prefer not to say<option>
+  <option value="others">Others<option>
+</select>
+     </div>
+
+     <div class="form-group">
+      <p>Would you recommend us to your friends?</p>
+      <label>
+     <input name="recommend" value="definitely"
+     type="radio" class="radio"  checked="">
+     </input> Definetly
+       <label><br>
+
+    <label>
+     <input name="recommend" value="maybe"
+     type="radio" class="inline"  checked="">
+     </input>Maybe<br>
+       <label>
+
+   <label>
+     <input name="recommend" value="notsure"
+     type="radio" class="inline"  checked="">
+     </input>Not Sure
+       <label>
+     </div>
+
+ <div class="form-group">
+<p>What is your favorite service at our site?</p>
+ <select id="dropdown" name="favorite" class="form=control" required="">
+<option type="radio" disabled="" value="" selected=""> Select an option</option>
+<option value="food">Foods<option>
+<option value="environment">Environment <option>
+<option value="customer">Customer Service <option>
+<option value="security">Security Service <option>
+  <option value="others">Others<option>
+ </select>
+ </div>
+    
+
+ <div class="form-group">
+ <p> What would  you like to see improved?(Check all that  apply)</p>
+
+ <label>
+ <input 
+ type="checkbox"
+  name="prefer"
+  value="transport" 
+  class="input-checkbox">
+ </input>
+ Tranport Service
+  </label><br>
+
+  <label>
+ <input 
+ type="checkbox"
+  name="prefer"
+  value="food" 
+  class="input-checkbox">
+ </input>
+ Foods
+  </label><br>
+
+  <label>
+ <input 
+ type="checkbox"
+  name="prefer"
+  value="pool" 
+  class="input-checkbox">
+ </input>
+  Swimming Pools 
+  </label><br>
+
+  <label>
+ <input 
+ type="checkbox"
+  name="prefer"
+  value="local"
+  class="input-checkbox">
+ </input>
+  More of Local Dishes
+  </label><br>
+
+
+ <label>
+ <input 
+ type="checkbox"
+  name="prefer"
+  value="sanitation" 
+  class="input-checkbox">
+ </input>
+ Sanitation
+ </label><br>
+
+
+ <label>
+ <input 
+ type="checkbox"
+  name="prefer"
+  value="wifi" 
+  class="input-checkbox">
+  </input>
+  WiFi 
+  </label><br><br>
+    </div>
+
+    <div class="form-group">
+   <p>Any comments or suggestions?</p>
+   </label>
+   <textarea
+   id="comments"
+    class="input-textarea"
+    name="comment"
+   placeholder="Enter your comment here...">
+   </textarea> 
+  </div>
+
+ <div class="form-group">
+  <button
+ type="submit" 
+  id="submit"
+ value="Submit" 
+ class="inline">
+            Submit
+          </button>
+
+  </div>
+  </form>
+</body>
+</html>
